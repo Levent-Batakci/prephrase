@@ -4,6 +4,9 @@ LSAT practice app: drills by question type, adaptive drills, timed sections and 
 blind review, flashcards, a question-type guide, and argumentative-writing practice.
 All 248 questions are original, written in LSAT style.
 
+LSAT is a registered trademark of the Law School Admission Council (LSAC), which is not affiliated with
+and does not endorse this project.
+
 Live at https://levent-batakci.github.io/prephrase/
 
 ## How progress is saved
