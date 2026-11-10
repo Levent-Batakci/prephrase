@@ -1,0 +1,93 @@
+/* Berkeley theme — overrides Industry tokens (load after industry.css). Light = Berkeley Blue on warm paper; dark = California Gold on deep navy. */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  --font-heading: "Source Serif 4", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+
+  --color-bg: #f6f4ef;
+  --color-surface: #ece8df;
+  --color-text: #141a2e;
+  --color-accent: #002676;
+  --color-divider: color-mix(in srgb, #141a2e 15%, transparent);
+
+  --color-neutral-100: #f7f5f1;
+  --color-neutral-200: #e9e5dc;
+  --color-neutral-300: #d6d0c4;
+  --color-neutral-400: #b9b2a5;
+  --color-neutral-500: #99928a;
+  --color-neutral-600: #7a746c;
+  --color-neutral-700: #5d5852;
+  --color-neutral-800: #423e3a;
+  --color-neutral-900: #2b2926;
+
+  --color-accent-100: #eaeefa;
+  --color-accent-200: #d3dcf4;
+  --color-accent-300: #aebde9;
+  --color-accent-400: #7d93d4;
+  --color-accent-500: #4a66b8;
+  --color-accent-600: #1f3f97;
+  --color-accent-700: #002676;
+  --color-accent-800: #001d5c;
+  --color-accent-900: #001341;
+
+  --color-gold: #fdb515;
+  --color-gold-hover: #ffc53d;
+  --color-on-gold: #141a2e;
+  --hl: #fde3a0;
+
+  --hdr-bg: #002676;
+  --hdr-fg: #ffffff;
+  --hdr-muted: #b9c6ec;
+  --hdr-line: color-mix(in srgb, #ffffff 24%, transparent);
+  --band-bg: #002676;
+  --band-fg: #ffffff;
+  --band-sub: #cdd7f2;
+  --scrim: color-mix(in srgb, #0b1226 55%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #141a2e 22%, transparent);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0b1226;
+  --color-surface: #111a33;
+  --color-text: #eceef4;
+  --color-accent: #fdb515;
+  --color-divider: color-mix(in srgb, #eceef4 15%, transparent);
+
+  --color-neutral-100: #121a31;
+  --color-neutral-200: #1a2340;
+  --color-neutral-300: #26304f;
+  --color-neutral-400: #3a4565;
+  --color-neutral-500: #576282;
+  --color-neutral-600: #78829f;
+  --color-neutral-700: #9ca4bb;
+  --color-neutral-800: #c3c8d6;
+  --color-neutral-900: #e4e7ef;
+
+  --color-accent-100: #16224a;
+  --color-accent-200: #1f2e5e;
+  --color-accent-300: #2f4278;
+  --color-accent-400: #4a5f9a;
+  --color-accent-500: #a88a3c;
+  --color-accent-600: #ffca4d;
+  --color-accent-700: #fdb515;
+  --color-accent-800: #fdd27a;
+  --color-accent-900: #fde9bd;
+
+  --hl: #5b4714;
+
+  --hdr-bg: #0e1733;
+  --hdr-fg: #eceef4;
+  --hdr-muted: #9ca4bb;
+  --hdr-line: color-mix(in srgb, #ffffff 16%, transparent);
+  --band-bg: #12286b;
+  --band-fg: #f3f4f8;
+  --band-sub: #c4cde8;
+  --scrim: color-mix(in srgb, #000000 62%, transparent);
+  --shadow-lg: 0 12px 36px color-mix(in srgb, #000000 55%, transparent);
+}
+
+::selection { background: color-mix(in srgb, var(--color-gold) 45%, transparent); }
+textarea::placeholder { color: var(--color-neutral-600); }
